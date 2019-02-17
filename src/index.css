@@ -1,0 +1,117 @@
+#score {
+    margin-top: 8rem;
+    font-size: 10rem;
+    color: goldenrod;
+    font-family: 'Montserrat', sans-serif;
+    
+    animation-name: bounceIn;
+    animation-duration: 700ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.container{
+    width: 60%;
+}
+
+.back-btn {
+  position: absolute;
+  left: 1.3rem;
+  bottom: 1rem;
+}
+
+.ck-bank, .ck-gov, .ck-com, .c-dsboard, .err-board {
+  display: none;
+}
+
+#checkInput2 {
+  margin-top: 0.5rem;
+}
+
+img {
+  height: 128px;
+  width: 128px;
+}
+
+.op-addr {
+  position: absolute;
+  bottom: 1rem;
+  margin: auto;
+  
+  left: 0; right: 0;
+}
+
+.accc {
+  position: absolute;
+  left: 1.3rem;
+  top: 0.1rem;
+  /* margin-top: 3rem; */
+  color: goldenrod;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    margin-top: 60px;
+}
+
+#content {
+    display: none;
+}
+
+form {
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 0px;
+    color: red;
+}
+
+.info-board {
+  background-color: goldenrod;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0;
+  
+  animation-name: fadeInDown;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 800ms;
+}
+
+#completedTaskList .content {
+    color: grey;
+    text-decoration: line-through;
+}
+
+@keyframes bounceIn{
+    0%{
+      opacity: 0;
+      transform: scale(0.3) translate3d(0,0,0);
+    }
+    50%{
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+    85%{
+      opacity: 1;
+      transform: scale(0.86);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1) translate3d(0,0,0);
+    }
+  }
+
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

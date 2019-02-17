@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bit Brother is Watching You</title>
+
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="pricing-header mt-5 px-3 py-3 pt-md-5 pb-md-5 mx-auto text-center">
+          <p class="lead">Do you want to register for a personal user or a corporation user?</p>
+          <p class="lead">Note: If you register a Corp Account, please choose Corp Type: 1. Bank; 2. Government; 3. Company</p>
+        </div>
+
+      <div>
+      <center><div class="form-check ck-type">
+        <input type="radio" class="form-check-input" id="user-type" name="types">
+        <label class="form-check-label" for="user-type">User</label>
+      </div>
+      <div class="form-check ck-type">
+        <input type="radio" class="form-check-input" id="corp-type" name="types" checked>
+        <label class="form-check-label" for="corp-type">Corporation</label>
+      </div></center>
+      </div>
+
+
+      <div class="mt-5 px-3 py-3 pt-md-5 pb-md-5 mx-auto text-center op-addr">
+        <span class="lead">Operator Address:  </span><span id="account" class="lead"></span>
+      </div>
+
+      <form onSubmit="App.registerUser(); return false;" class="mt-5 px-3 py-3 pt-md-5 pb-md-5 mx-auto text-center">
+        <input id="checkInput" type="text" class="form-control" placeholder="Enter Name..." required>
+        <input id="checkInput2" type="text" class="form-control" placeholder="Enter ID or Corp Code..." required>
+        <center><input type="submit" value="Submit" class="mt-2 text-center btn btn-primary"></center>
+      </form>
+      
+      <center>
+        <div class="col-lg-4 c-dsboard">
+          <div class="lead c-info">score change: </div> <span id="chg"></span>
+        </div>
+      </center>
+      <center>
+          <div class="col-lg-4 err-board">
+            <div class="lead">Input Error!</div>
+          </div>
+      </center>
+
+
+    </div>
+
+    
+    <a href="./"><button class="btn back-btn">Back</button></a>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bit Brother is Watching You</title>
+
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons made by Freepik from www.flaticon.com -->
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="pricing-header mt-5 px-3 py-3 pt-md-5 pb-md-5 mx-auto text-center">
+        <h1 class="display-4">BitBrt</h1>
+        <p class="lead">A Credit Score Checking and Updating Decentralized Application</p>
+      </div>
+      
+      <div class="card-deck mb-3 pt-3 mt-5 text-center">
+          <div class="card">
+            <img src="./assets/001-report.png" alt="001">
+            <a href="./register.html" class="btn btn-primary">Register</a>
+          </div>
+          <div class="card">
+            <img src="./assets/002-recruit.png" alt="002">
+            <a href="./read.html" class="btn btn-primary">Check</a>
+          </div>
+          <div class="card">
+            <img src="./assets/003-notebook.png" alt="003">
+            <a href="./update.html" class="btn btn-primary">Update</a>
+          </div>
+      </div>
+
+      <div class="mt-5 px-3 py-3 pt-md-5 pb-md-5 mx-auto text-center op-addr">
+        <span class="lead">Operator Address:  </span><span id="account" class="lead"></span>
+      </div>
+      
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

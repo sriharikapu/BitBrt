@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bit Brother is Watching You</title>
+
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <main role="main" class="col-lg-12 d-flex justify-content-center">
+          <div id="loader" class="text-center">
+            <p class="text-center">Loading...</p>
+          </div>
+          <div id="content">
+            <div id="score" class="text-center">
+            </div>
+            <div class="card mb-4 info-board">
+              <div class="text-center mt-1 mb-1">
+                <span>The rank is: </span><span id="rank"></span>
+              </div>
+              <div class="text-center mt-1 mb-1">
+                <span>Name of the person: </span><span id="pname">Jing Jiang</span>
+              </div>
+              <div class="text-center mt-1 mb-1">
+                <span>ID of verification: </span><span id="gov-id">Chou didi</span>
+              </div>
+            </div>
+            <form onSubmit="App.loadScore(); return false;">
+              <input id="checkInput" type="text" class="form-control" placeholder="Enter Address..." required>
+              <center><input type="submit" value="Submit" class="mt-2 text-center btn btn-primary"></center>
+            </form>
+          </div>
+        </main>
+      </div>
+      <div class="mt-5 px-3 py-3 pt-md-5 pb-md-5 mx-auto text-center op-addr">
+        <span class="lead">Operator Address:  </span><span id="account" class="lead"></span>
+      </div>
+    </div>
+
+    <center>
+        <div class="col-lg-4 err-board">
+          <div class="lead">Input Error!</div>
+        </div>
+    </center>
+    
+    <a href="./"><button class="btn back-btn">Back</button></a>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
