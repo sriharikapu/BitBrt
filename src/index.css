@@ -2,7 +2,6 @@
     margin-top: 8rem;
     font-size: 10rem;
     color: goldenrod;
-    font-family: 'Montserrat', sans-serif;
     
     animation-name: bounceIn;
     animation-duration: 700ms;
@@ -12,6 +11,31 @@
 
 .container{
     width: 60%;
+}
+
+.display-4 {
+  text-shadow: 2px 2px #444;
+  color:goldenrod;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title1 {
+  font-size: 150%;
+}
+
+.box {
+  transition: box-shadow .3s;
+  width: 300px;
+  margin-top: 0;
+  /* margin: 50px; */
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+  
+}
+.box:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .back-btn {
@@ -37,6 +61,15 @@ img {
   position: absolute;
   bottom: 1rem;
   margin: auto;
+  
+  left: 0; right: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0.9rem;
+  margin: auto;
+  font-size: 90%;
   
   left: 0; right: 0;
 }
@@ -71,7 +104,7 @@ ul {
 .info-board {
   background-color: goldenrod;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   opacity: 0;
   
   animation-name: fadeInDown;
