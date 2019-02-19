@@ -2,7 +2,7 @@
 
 A Credit Score Checking and Update dApp.
 
-Project for ETHDenver 2019
+Project for ETHDenver 2019 Hackathon
 
 Made by Jing Jiang and Alex Liu
 
