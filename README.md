@@ -8,7 +8,7 @@ Made by Jing Jiang and Alex Liu
 
 To run the demo locally: 
 ```
-git clone
+git clone https://github.com/jassiay/BitBrt
 npm install
 ```
 Then run Ganache to create a local chain,
